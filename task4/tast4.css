@@ -1,0 +1,69 @@
+head {
+    position:fixed;
+    left:0;
+    top:0;}
+body{background-color:rgb(239,240,244);
+    height:600px;}
+p{
+    font-size: 1.1em;
+    color:white;}
+input {border:0;
+    width: 60vw;
+    height:20px;}
+a:hover {color:rgb(95,192,205)}
+.top{
+    color: white;
+    background-color: rgb(95,192,205);
+    text-align:center;
+    height: 40px;
+    line-height:40px;}
+.left1{
+    position: absolute;
+    top:8px;
+    left:20px;
+    cursor:pointer;}
+.right1{
+    position: absolute;
+    top:8px;
+    right:20px;
+    cursor:pointer;}
+.input1{
+    position:absolute;
+    top:82px;
+    left:90px;}
+.input2{
+    position:absolute;
+    top:143px;
+    left:90px;}
+.box{
+    height: 50px;
+    background-color:white;
+    margin-top:12px;}
+.img1{
+    position:absolute;
+    left:23px;
+    top:77px;}
+.img2{
+    position:absolute;
+    left:23px;
+    top:138px;}
+.img3{
+    position:absolute;
+    left:60px;
+    top:139px;}
+.img4{
+    position:absolute;
+    left:60px;
+    top:78px;}
+.bottom{
+    color: white;
+    background-color: rgb(95,192,205);
+    text-align:center;
+    height: 50px;
+    line-height:50px;
+    font-size:1.2em;
+    cursor:pointer;}
+.help{
+    font-size:1.02em ;
+    color: rgb(95,192,205);
+    float: right;}

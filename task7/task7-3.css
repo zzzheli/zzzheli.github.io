@@ -128,3 +128,15 @@ body {
     width: 150px;}
 a {text-decoration: none;
    color: #fff;}
+.btn .btn-primary li:hover{
+    display: block;
+    background: transparent;
+    padding: 10px;}
+.d2 .btn-primary:hover {
+    color: #fff;
+    background-color: #FFC865;
+    border-color: #FFC865;}
+.d1 .btn-primary:hover {
+    color: #fff;
+    background-color: #F66F6F;
+    border-color: #F66F6F;}

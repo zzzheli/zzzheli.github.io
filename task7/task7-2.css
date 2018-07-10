@@ -67,9 +67,8 @@ body {
 
 div.container div.row div {
     margin:20px auto;}
-div.container div.row div {
+.container {width: auto;}
 
-    }
 
 .row {display: flex ;
      justify-content: center ;}
@@ -130,8 +129,8 @@ div.container div.row div {
     align-items: center;
     position: fixed;
     bottom: 0;
-    left: calc(20% - 73px);
-    right: calc(20% - 73px) ;
+    left: calc(16.666666666666666666% -  47.7px);
+    right: calc(16.666666666666666666% -  47.7px) ;
     width: auto;
     height: 120px;
     background-color: #29BDE0;

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    maximum-scale=1.0, user-scalable=no"/>
+    <title>桌游精灵2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="task7-2.css">
+</head>
+<body>
+
+<div class="header" >
+    <div class="top-l" ></div>
+    <span>投票</span>
+    <div class="top-r" ></div>
+</div>
+
+<div class="top">
+    <span class="txt">发言讨论结束，大家请投票</span>
+    <div>
+        <audio src="image-task7/财富自由.mp3" controls="controls" preload id="music" hidden></audio>
+        <button class="play" onclick="a();"></button>
+        <script>
+            function a(){
+                var audio = document.getElementById('music');
+                if(audio.paused){
+                    audio.play();}
+                else{audio.pause();}
+            }
+        </script>
+    </div>
+</div>
+
+<div class="x2-box ">
+    <div class="x1-box " ></div>
+    <span>点击票数最多人的头像</span>
+</div>
+
+<div class="container  ">
+    <div class="row ">
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">水民</span>
+            <span class="mix-box " >1号</span>
+            <div class="hidden">
+                 <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                 <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                 <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                 <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">网友</span>
+            <span class="mix-box " >2号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">喷子</span>
+            <span class="mix-box " >3号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container  ">
+    <div class="row ">
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">警察</span>
+            <span class="mix-box " >4号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">狙击手</span>
+            <span class="mix-box " >5号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">法官</span>
+            <span class="mix-box " >6号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container  ">
+    <div class="row ">
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">奶妈</span>
+            <span class="mix-box " >7号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">机械师</span>
+            <span class="mix-box " >8号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">盾位</span>
+            <span class="mix-box " >9号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container  ">
+    <div class="row ">
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">大拿</span>
+            <span class="mix-box " >10号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">雷电法王</span>
+            <span class="mix-box " >11号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">磁暴步兵</span>
+            <span class="mix-box " >12号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container  ">
+    <div class="row ">
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">水民</span>
+            <span class="mix-box " >1号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">水民</span>
+            <span class="mix-box " >1号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+        <div class="col-xs-4  main-box ">
+            <span class="max-box  ">网瘾少年</span>
+            <span class="mix-box " >99号</span>
+            <div class="hidden">
+                <img  class="s-img "  src="image-task7/t5.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t6.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t7.png" height="30" width="30"/>
+                <img  class="s-img "  src="image-task7/t8.png" height="30" width="30"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="foot ">
+    <div class="last-box ">
+        <span>
+            <a href="https://zzzheli.github.io/task7/task7-3.html" >投死</a>
+        </span>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

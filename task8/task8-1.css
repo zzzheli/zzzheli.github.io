@@ -654,7 +654,15 @@ div#carousel-example-generic{
 
 /*//---------------------------big6--------------------------//*/
 
+
 @media screen and (min-width: 1200px){
+    .big3-1 {
+        width: 1200px;
+        justify-content: space-between;
+    }
+    .big4-1-1 {
+        width: 240px;
+    }
     .big5-1 {
         width: 1200px;
         justify-content: space-between;

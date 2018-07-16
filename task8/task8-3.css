@@ -3,7 +3,7 @@ body {margin:0;
 .top {
     display: flex;
     justify-content: space-between;
-    width: 1280px;
+    width: 1200px;
     height: 36px;
     margin: 0 auto;
     color: #29B078;}
@@ -51,10 +51,10 @@ body {margin:0;
         display: none;}
 }
 
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
     .top {padding:0 20px;}
 }
-@media all and (max-width: 1281px) {
+@media all and (max-width: 1200px) {
     .top {width: 90%;}
 }
 
@@ -89,7 +89,7 @@ body {margin:0;
     width: 107px;
     height: 49px;
     background: url(image-task8/n.png) -663px -10px no-repeat;
-    transform: scale(1);
+    transform: scale(0.85);
     margin-left: 5px;}
 
 
@@ -102,7 +102,7 @@ body {margin:0;
     background-color: #29b078;
     color: #fff;}
 .navbar {
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
     margin-bottom: 0;
 }
 .navbar-default .navbar-toggle:hover,
@@ -110,12 +110,12 @@ body {margin:0;
     background-color: #218c60;
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1200px){
     .navbar {
-        width: 1280px;
+        width: 1200px;
         margin: 0 auto;}
     .avbar-default{
-        width: 1280px;
+        width: 1200px;
         margin: 0 auto;}
 }
 .gg {background-color:#29b078;
@@ -124,17 +124,17 @@ body {margin:0;
 .navbar-collapse {
     border-top:0;
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
     .nav > li > a {
         height: auto;
     }
 }
-@media (min-width: 767px){
+@media (min-width: 768px){
     .navbar-nav > li > a {
         padding-top: 15px;
         padding-bottom: 0;}
     .nav > li > a {
-        height: 69px;
+        height: 60px;
     }
     .navbar-default .navbar-nav > .active > a:hover
     {
@@ -145,7 +145,7 @@ body {margin:0;
 }
 @media (max-width: 1024px){
     .log{
-        margin-bottom: 20px;}
+        margin-bottom: 10px;}
 }
 @media (max-width: 767px){.navbar-default .navbar-nav > .active > a:hover
 {
@@ -153,7 +153,6 @@ body {margin:0;
     background-color: #47d096;
     border: 0;}
 }
-
 
 /*/----------------------------head-----------------------------/*/
 
@@ -268,8 +267,6 @@ body {margin:0;
     color: #000;
 }
 
-
-
 .blo1 {
     font-weight: bold;
 }
@@ -327,7 +324,7 @@ body {margin:0;
 }
 .ho{
     color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     line-height: 30px;
     padding: 20% 2%;
@@ -414,9 +411,9 @@ body {margin:0;
 .big6-tx3:hover {text-decoration:underline;}
 
 
-@media  (min-width: 1280px){
+@media  (min-width: 1200px){
     .big6 {
-        width: 1280px;
+        width: 1200px;
         justify-content: space-between;
     }
 }
@@ -441,7 +438,7 @@ body {margin:0;
 /*//---------------------------big6--------------------------//*/
 
 
-@media screen and (max-width: 1281px) {
+@media screen and (max-width: 1200px) {
     .main-box {
         width: 80%;
     }

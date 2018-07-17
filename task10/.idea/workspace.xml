@@ -19,8 +19,8 @@
           <file leaf-file-name="task8-1.html" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/WebstormProjects/untitled/task8/task8-1.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="531">
-                  <caret line="397" column="0" lean-forward="true" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+                <state relative-caret-position="252">
+                  <caret line="50" column="96" lean-forward="false" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="96" />
                   <folding />
                 </state>
               </provider>
@@ -29,8 +29,8 @@
           <file leaf-file-name="task8-1.css" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/WebstormProjects/untitled/task8/task8-1.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="111">
-                  <caret line="724" column="0" lean-forward="false" selection-start-line="724" selection-start-column="0" selection-end-line="740" selection-end-column="0" />
+                <state relative-caret-position="19341">
+                  <caret line="722" column="5" lean-forward="true" selection-start-line="722" selection-start-column="5" selection-end-line="722" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -39,8 +39,8 @@
           <file leaf-file-name="task10.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/task10.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2003">
-                  <caret line="205" column="21" lean-forward="true" selection-start-line="205" selection-start-column="21" selection-end-line="205" selection-end-column="21" />
+                <state relative-caret-position="990">
+                  <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
                   <folding>
                     <element signature="n#div#1;n#div#1;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#1;n#div#3;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -96,8 +96,8 @@
           <file leaf-file-name="task10.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/task10.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="377" column="5" lean-forward="true" selection-start-line="377" selection-start-column="5" selection-end-line="377" selection-end-column="5" />
+                <state relative-caret-position="480">
+                  <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -226,12 +226,12 @@
       <option name="presentableId" value="Default" />
       <updated>1531705527553</updated>
       <workItem from="1531705528827" duration="25357000" />
-      <workItem from="1531787879294" duration="29637000" />
+      <workItem from="1531787879294" duration="32234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54994000" />
+    <option name="totallyTimeSpent" value="57591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,18 +353,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3002" column="1" lean-forward="false" selection-start-line="3002" selection-start-column="1" selection-end-line="3002" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/WebstormProjects/untitled/task6.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/WebstormProjects/untitled/task8/task8-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="50" column="96" lean-forward="false" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/WebstormProjects/untitled/task8/task8-1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19341">
+          <caret line="722" column="5" lean-forward="true" selection-start-line="722" selection-start-column="5" selection-end-line="722" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -377,26 +385,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/untitled/task8/task8-1.css">
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="724" column="0" lean-forward="false" selection-start-line="724" selection-start-column="0" selection-end-line="740" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/untitled/task8/task8-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="397" column="0" lean-forward="true" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="3002" column="1" lean-forward="false" selection-start-line="3002" selection-start-column="1" selection-end-line="3002" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2003">
-          <caret line="205" column="21" lean-forward="true" selection-start-line="205" selection-start-column="21" selection-end-line="205" selection-end-column="21" />
+        <state relative-caret-position="990">
+          <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
           <folding>
             <element signature="n#div#1;n#div#1;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#3;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -406,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task10.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="377" column="5" lean-forward="true" selection-start-line="377" selection-start-column="5" selection-end-line="377" selection-end-column="5" />
+        <state relative-caret-position="480">
+          <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
           <folding />
         </state>
       </provider>

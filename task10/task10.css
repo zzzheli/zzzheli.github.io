@@ -57,9 +57,7 @@
     background-color: #1D7AD9;
     border-color: #1D7AD9;
 }
-.btn-default:active{
-    background-color: red;
-}
+
 
 /*/----------------------------head-----------------------------/*/
 
@@ -90,7 +88,36 @@
 .l {
     width: 65px;
     height: 6px;
-    border-radius: 2px;
+}
+.l1 {
+    width: 65px;
+    height: 6px;
+    border-radius: 5px 0 0 5px;
+}
+.l2 {
+    width: 65px;
+    height: 6px;
+    border-radius: 0 5px 5px 0;
+}
+.l3 {
+    width: 65px;
+    height: 6px;
+    border-radius: 5px 0 0 5px;
+}
+a:hover {
+
+    text-decoration: none;
+
+}
+a:active {
+    color: #FF7F03;
+    text-decoration: none;
+
+}
+a:active.b1 {
+    color: #FF7F03;
+    
+
 }
 .c {
     display: flex;
@@ -112,6 +139,7 @@
 .bg-gray2 {background-color: #e6e6e6;}
 .orange {color: #FF7F03;}
 .gray {color: #ccc;}
+
 .b2 {
     width: 100%;
     height: 20px;
@@ -231,6 +259,7 @@
 
 .b4-2 {
     display: flex;
+    padding-right: 15px;
 }
 .b4-3 {
     display: flex;
@@ -344,10 +373,6 @@ select {
         width: 25px;
 
     }
-
-
-
-
 }
 
 @media (max-width: 566px) {
@@ -375,6 +400,7 @@ select {
     }
     .b4-1-1 {
         margin: 15px;
+        padding-right:0
     }
     .b4-2{
         margin: 15px auto 30px auto;

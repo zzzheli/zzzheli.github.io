@@ -370,9 +370,11 @@ select {
         flex-wrap: wrap;
     }
     .b4-1{
-        width: auto;
         margin: 0 auto;
         justify-content: center;
+    }
+    .b4-1-1 {
+        margin: 15px;
     }
     .b4-2{
         margin: 15px auto 30px auto;
@@ -382,6 +384,13 @@ select {
     }
     .top-a {
         border: 0;
+    }
+}
+
+@media (max-width: 505px) {
+    .b4-1 {
+        width: auto;
+
     }
 }
 

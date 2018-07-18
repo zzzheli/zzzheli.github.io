@@ -1,0 +1,111 @@
+$color1:#5FC0CD;
+$color2:#fff;
+$color3:#EFF0F4;
+$font-size1:1.2em;
+$font-size2:1.4em;
+
+
+%mt10 {
+  margin-top: 10px;
+}
+%ml20 {
+  margin-left: 20px;
+}
+%mr20 {
+  margin-right: 20px;
+}
+body {
+  background-color: $color3;
+}
+a {
+  color: #5FC0CD;
+}
+%head {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: $color1;
+  height: 40px;
+  color: $color2;
+  font-size: $font-size1;
+}
+
+.head {
+  @extend %head;
+}
+.t1 {
+  @extend %ml20;
+  @extend %pointer;
+}
+.t2 {
+  @extend %mr20;
+  @extend %pointer;
+}
+
+
+%box1 {
+  display:flex;
+  align-items:center;
+  background-color: $color2;
+  height: 50px;
+}
+.box1 {
+  @extend %box1;
+  @extend %mt10;
+}
+%im {
+  height: 36px;
+  padding: 2px 25px 2px 25px;
+  border-right: 2px solid #EAEDEE;
+}
+.im {
+  @extend %im;
+}
+%in{
+  width: 50vw;
+  height: 25px;
+  border:0;
+  margin: 10px 10px 10px 15px ;
+}
+%pointer {
+  cursor:pointer;
+}
+.in {
+  @extend %in;
+}
+
+
+.box1 {
+  @extend %box1;
+  @extend %mt10;
+}
+
+
+
+
+@mixin login {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 60px;
+  background-color: $color1;
+  color: $color2;
+  font-size: $font-size2;
+  margin-top: 40px;
+}
+
+.login {
+  @include login;
+  @extend %pointer;
+}
+
+@mixin bot {
+  float: right;
+  font-size: $font-size1;
+}
+.bot {
+  @include bot;
+  @extend %mt10;
+  @extend %mr20;
+
+}

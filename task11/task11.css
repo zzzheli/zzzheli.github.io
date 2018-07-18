@@ -1,0 +1,59 @@
+.box1, .bot {
+  margin-top: 10px; }
+
+.t1 {
+  margin-left: 20px; }
+
+.t2, .bot {
+  margin-right: 20px; }
+
+body {
+  background-color: #EFF0F4; }
+
+a {
+  color: #5FC0CD; }
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5FC0CD;
+  height: 40px;
+  color: #fff;
+  font-size: 1.2em; }
+
+.box1 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 50px; }
+
+.im {
+  height: 36px;
+  padding: 2px 25px 2px 25px;
+  border-right: 2px solid #EAEDEE; }
+
+.in {
+  width: 50vw;
+  height: 25px;
+  border: 0;
+  margin: 10px 10px 10px 15px; }
+
+.t1, .t2, .login {
+  cursor: pointer; }
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #5FC0CD;
+  color: #fff;
+  font-size: 1.4em;
+  margin-top: 40px; }
+
+.bot {
+  float: right;
+  font-size: 1.2em; }
+
+/*# sourceMappingURL=task11.css.map */

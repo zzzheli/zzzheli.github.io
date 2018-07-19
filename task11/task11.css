@@ -1,11 +1,22 @@
-.box1, .bot {
+.box2, .box1, .bot {
   margin-top: 10px; }
 
-.t1 {
-  margin-left: 20px; }
+.box1 {
+  margin-top: 55px; }
 
-.t2, .bot {
+.t3 {
+  padding-top: 25px; }
+
+.bot {
   margin-right: 20px; }
+
+.t1 {
+  position: absolute;
+  left: 20px; }
+
+.t2 {
+  position: absolute;
+  right: 20px; }
 
 body {
   background-color: #EFF0F4; }
@@ -14,22 +25,25 @@ a {
   color: #5FC0CD; }
 
 .head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #5FC0CD;
   height: 45px;
+  line-height: 45px;
   color: #fff;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  text-align: center;
+  clear: both; }
 
-.box1 {
+.box1, .box2 {
   display: flex;
   align-items: center;
   background-color: #fff;
   height: 45px; }
 
 .im {
-  height: 36px;
   padding: 2px 25px 2px 25px;
   border-right: 1.5px solid #EAEDEE; }
 
@@ -39,7 +53,7 @@ a {
   border: 0;
   margin: 10px 10px 10px 15px; }
 
-.t1, .t2, .login {
+.t1, .t2, .t3, .login {
   cursor: pointer; }
 
 .login {

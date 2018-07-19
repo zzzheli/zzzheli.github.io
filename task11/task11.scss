@@ -8,12 +8,27 @@ $font-size2:1.4em;
 %mt10 {
   margin-top: 10px;
 }
+%mt {
+  margin-top: 55px;
+}
+%pt {
+  padding-top: 25px;
+}
 %ml20 {
   margin-left: 20px;
 }
 %mr20 {
   margin-right: 20px;
 }
+%fl {
+  position: absolute;
+  left: 20px;
+}
+%fr {
+  position: absolute;
+  right: 20px;}
+
+
 body {
   background-color: $color3;
 }
@@ -21,24 +36,35 @@ a {
   color: #5FC0CD;
 }
 %head {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: $color1;
   height: 45px;
+  line-height: 45px;
   color: $color2;
   font-size: $font-size1;
+  text-align: center;
+  clear:both;
 }
 
 .head {
   @extend %head;
 }
 .t1 {
-  @extend %ml20;
+
   @extend %pointer;
+  @extend %fl;
 }
 .t2 {
-  @extend %mr20;
+
+  @extend %pointer;
+  @extend %fr;
+}
+
+.t3 {
+  @extend %pt;
   @extend %pointer;
 }
 
@@ -51,10 +77,13 @@ a {
 }
 .box1 {
   @extend %box1;
+  @extend %mt;
+}
+.box2 {
+  @extend %box1;
   @extend %mt10;
 }
 %im {
-  height: 36px;
   padding: 2px 25px 2px 25px;
   border-right: 1.5px solid #EAEDEE;
 }

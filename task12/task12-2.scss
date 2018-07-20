@@ -1,0 +1,259 @@
+$color1 :#5FC0CD;
+$color2 :#fff;
+$color3 :#999;
+
+body{
+  margin: 0;
+  height: 850px;
+}
+%bg-co1 {
+  background-color: $color1 ;
+}
+%bg-co2 {
+  background-color: $color2 ;
+}
+%co1 {
+  color: $color1 ;
+}
+%co2 {
+  color: $color2 ;
+}
+%co3{
+  color: $color3 ;
+}
+%fixed {
+  position: fixed;
+}
+%mr10 {
+  margin-right: 10px;
+}
+%mr20 {
+  margin-right: 20px;
+}
+%ml10 {
+  margin-left: 10px;
+}
+%ml15 {
+  margin-left: 15px;
+}
+%ml50 {
+  margin-left: 50px;
+}
+%mtb10 {
+  margin: 15px 0 10px 0;
+}
+%mbt10 {
+  margin: 10px 0 15px 0;
+}
+.mr10 {
+  @extend %mr10;
+}
+.mr20 {
+  @extend %mr20;
+}
+.ml15 {
+  @extend %ml15;
+}
+.ml10{
+  @extend %ml10;
+}
+.ml50{
+  @extend %ml50;
+}
+.mtb10{
+  @extend %mtb10;
+}
+.mbt10{
+  @extend %mbt10;
+}
+.co1 {
+  @extend %co1;
+}
+.co3 {
+  @extend %co3;
+}
+
+
+@mixin head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
+  line-height: 60px;
+  text-align: center;
+  z-index: 5;
+}
+
+.head {
+  @extend %fixed;
+  @extend %bg-co1;
+  @extend %co2;
+  @include head;
+}
+
+@mixin head-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  width: 200px;
+  height: 43px;
+  background-color: #55A8B3;
+  border: 1px solid #55A8B3;
+  border-radius: 6px;
+  line-height: 42px;
+  font-size: 1.55em;
+}
+.head-1 {
+  @include head-1;
+  @extend %co2;
+}
+@mixin head-1-1 {
+  width: 100px;
+  height: 43px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+
+}
+.head-1-1 {
+  @include head-1-1;
+  @extend %co1;
+  @extend %bg-co2;
+}
+
+@mixin head-im {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 42px;
+  height: 44px;
+  background: url(images-task12/n.png) -317px -10px no-repeat;
+  transform: scale(.8);
+}
+.head-im {
+  @include  head-im;
+}
+@mixin select-box{
+  position: fixed;
+  top :55px;
+  left:0;
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #D8E2E3 ;
+}
+.select-box {
+  @include  select-box;
+  @extend %bg-co2;
+}
+select {
+  float: left;
+  border:0;
+  width: 33.333%;
+  height: 50px;
+  line-height: 50px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1.2rem;
+  color: #808080;
+  background: url(images-task12/7.png)  no-repeat center  right;
+  padding-left:calc(16.6% - 20px);
+}
+.main-box {
+  position: relative;
+  top:105px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+  color: #999;
+  border-bottom: 1px solid #D8E2E3 ;
+}
+.m1{
+  display: flex;
+  align-items: center;
+}
+
+.m1-img1 {
+  width: 24px;
+  height: 24px;
+  background: url(images-task12/n.png) -130px -10px no-repeat;
+  transform: scale(.9);
+}
+.m1-img2 {
+  width: 19px;
+  height: 23px;
+  background: url(images-task12/n.png) -49px -10px no-repeat ;
+  transform: scale(.9);
+}
+.img-box {
+  display: flex;
+  justify-content: center;
+  width: 25px;
+}
+.m2 {
+  display: flex;
+  justify-content: space-between;
+  line-height: 33px;
+}
+.m2-t1 {
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow:ellipsis;
+  text-overflow:ellipsis ;
+}
+.m2-t2 {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: #ff0000;
+
+}
+.m2-img{
+  width: 19px;
+  height: 33px;
+  background: url(images-task12/n.png) -10px -10px no-repeat ;
+  transform: scale(.9);
+}
+footer {
+  @extend %fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  @extend %bg-co2;
+  background-color: #F8FAFB;
+  bottom :0;
+  z-index: 3;
+}
+.foot1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f-img1 {
+  width: 46px;
+  height: 40px;
+  background: url(images-task12/n.png) -441px -10px no-repeat ;
+  transform: scale(.9);
+}
+.f-img2 {
+  width: 42px;
+  height: 41px;
+  background: url(images-task12/n.png) -379px -10px no-repeat ;
+  transform: scale(.9);
+}
+.f-img3 {
+  width: 94px;
+  height: 94px;
+  background: url(images-task12/n.png) -507px -10px no-repeat ;
+  transform: scale(.8);
+}
+a {text-decoration: none;}
+

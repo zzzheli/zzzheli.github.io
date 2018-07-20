@@ -82,7 +82,7 @@ body{height:650px;
     top:calc(50% - 10px);
     left: 55px;
     }
-.main-x{margin-left: 15px;}
+.main-x{margin: 0 15px 0 15px;}
 .gray{
     display: inline-block;
     vertical-align: middle;

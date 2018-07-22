@@ -1,0 +1,127 @@
+@mixin position($position,$side1,$s1value,$side2,$s2value) {
+  position: $position;
+  #{$side1}: $s1value;
+  #{$side2}: $s2value;
+}
+@mixin flex($flex,$f-direction,$j-content,$a-items){
+  display: $flex;
+  flex-direction:$f-direction ;
+  justify-content: $j-content;
+  align-items: $a-items;
+}
+@mixin f-wrap($f-wrap){
+  flex-wrap: $f-wrap;
+}
+@mixin box($width,$height){
+  width: $width;
+  height:$height ;
+}
+@mixin bg-c($bg-c){
+  background-color: $bg-c;
+}
+@mixin border($border){
+  border: $border;
+}
+
+@mixin font($f-s,$co,$t-a,$l-h){
+  font-size: $f-s;
+  color:$co;
+  text-align: $t-a;
+  line-height: $l-h;
+}
+@mixin sprite($w,$h,$bg,$tf){
+  width: $w;
+  height: $h;
+  background: $bg;
+  transform: $tf;
+}
+@mixin margin($margin){
+  margin: $margin;
+}
+@mixin padding($padding){
+  padding: $padding;
+}
+body {
+  @include bg-c (#29BDE0);
+}
+.header {
+  @include box(100%,60px);
+  @include font(1.4em,#fff,center,60px);
+  border-bottom: 1px solid #74D4EB ;
+}
+.header-1 {
+  @include position(absolute,top,9px,left,25px);
+  @include sprite(51px,42px,
+          url(images-task13/t.png) -82px -235px no-repeat,
+          scale(0.66));
+}
+.header-2 {
+  @include position(absolute,top,12px,right,25px);
+  @include sprite(40px,40px,
+          url(images-task13/t.png) -10px -307px no-repeat,
+          scale(0.66));
+}
+.main-box {
+  @include flex(flex,column,center,center);
+  padding-bottom: 20px;
+}
+.log {
+  position: relative;
+  @include sprite(349px,205px,
+          url(images-task13/t.png) -10px -10px no-repeat,
+          scale(0.55));
+}
+.log-t {
+  @include position(absolute,bottom,10px,left,72px);
+  @include font(3.2em,#fff,center,70px)
+}
+.tx1 {
+  @include font(1.5em,#ffc865,center,normal);
+  @include margin(-30px 10px 30px 10px);
+}
+.tx2 {
+  display: block;
+  @include font(1em,#fff,left,normal);
+}
+.txt {width: 72%;}
+.txt-box {
+  @include flex(flex,column,flex-start,center);
+  @include box(100%,650px);
+  @include bg-c(#fff)
+}
+.txt1-box {
+  @include flex(flex,column,center,center);
+  @include box(100%,100px);
+  border-bottom: 1px solid #ddd;
+}
+.t1 {
+  @include font(1.1em,#000,left,normal);
+}
+.t2{
+  @include font(0.9em,#8c8c8c,left,normal);
+}
+.t3{
+  float: right;
+  @include font(0.9em,#8c8c8c,right,normal);
+  }
+.foot {
+  @include position(fixed,bottom,0,left,0);
+  @include flex(flex,row,space-around,center);
+  @include box(100%,100px);
+  background-color: rgba(41,189,224,0.5);
+}
+.f1 {
+  width: 150px;
+  @include bg-c(#F66F6F);
+  @include font(1.6em,#fff,center,32px);
+  @include padding(10px 0);
+  border-radius: 5px;
+}
+.f2 {
+  width: 150px;
+  @include bg-c(#FFC865);
+  @include font(1.6em,#fff,center,32px);
+  @include padding(10px 0);
+  border-radius: 5px;
+}
+a {color:#fff;}

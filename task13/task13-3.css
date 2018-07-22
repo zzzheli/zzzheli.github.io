@@ -1,0 +1,143 @@
+body {
+  background-color: #29BDE0; }
+
+.header {
+  width: 100%;
+  height: 60px;
+  font-size: 1.4em;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  border-bottom: 1px solid #74D4EB; }
+
+.header-1 {
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  width: 51px;
+  height: 42px;
+  background: url(images-task13/t.png) -82px -235px no-repeat;
+  transform: scale(0.66); }
+
+.header-2 {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  background: url(images-task13/t.png) -10px -307px no-repeat;
+  transform: scale(0.66); }
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px; }
+
+.log {
+  position: relative;
+  width: 349px;
+  height: 205px;
+  background: url(images-task13/t.png) -10px -10px no-repeat;
+  transform: scale(0.55); }
+
+.log-t {
+  position: absolute;
+  bottom: 10px;
+  left: 72px;
+  font-size: 3.2em;
+  color: #fff;
+  text-align: center;
+  line-height: 70px; }
+
+.tx1 {
+  font-size: 1.5em;
+  color: #ffc865;
+  text-align: center;
+  line-height: normal;
+  margin: -30px 10px 30px 10px; }
+
+.tx2 {
+  display: block;
+  font-size: 1em;
+  color: #fff;
+  text-align: left;
+  line-height: normal; }
+
+.txt {
+  width: 72%; }
+
+.txt-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  background-color: #fff; }
+
+.txt1-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #ddd; }
+
+.t1 {
+  font-size: 1.1em;
+  color: #000;
+  text-align: left;
+  line-height: normal; }
+
+.t2 {
+  font-size: 0.9em;
+  color: #8c8c8c;
+  text-align: left;
+  line-height: normal; }
+
+.t3 {
+  float: right;
+  font-size: 0.9em;
+  color: #8c8c8c;
+  text-align: right;
+  line-height: normal; }
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(41, 189, 224, 0.5); }
+
+.f1 {
+  width: 150px;
+  background-color: #F66F6F;
+  font-size: 1.6em;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  padding: 10px 0;
+  border-radius: 5px; }
+
+.f2 {
+  width: 150px;
+  background-color: #FFC865;
+  font-size: 1.6em;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  padding: 10px 0;
+  border-radius: 5px; }
+
+a {
+  color: #fff; }
+
+/*# sourceMappingURL=task13-3.css.map */

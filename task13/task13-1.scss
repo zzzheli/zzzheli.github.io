@@ -1,0 +1,211 @@
+$color1 : #69D1E9;
+$color2 : #fff;
+$color3 : #9a9a9a;
+$color4 : #f0f0f0;
+
+@mixin position($position,$side1,$s1value,$side2,$s2value) {
+  position: $position;
+  #{$side1}: $s1value;
+  #{$side2}: $s2value;
+}
+@mixin flex($flex,$f-direction,$j-content,$a-items){
+  display: $flex;
+  flex-direction:$f-direction ;
+  justify-content: $j-content;
+  align-items: $a-items;
+}
+@mixin f-wrap($f-wrap){
+  flex-wrap: $f-wrap;
+}
+@mixin box($width,$height){
+  width: $width;
+  height:$height ;
+}
+@mixin bg-c($bg-c){
+  background-color: $bg-c;
+}
+@mixin border($border){
+  border: $border;
+}
+@mixin font($f-s,$co,$t-a,$l-h){
+  font-size: $f-s;
+  color:$co;
+  text-align: $t-a;
+  line-height: $l-h;
+}
+@mixin sprite($w,$h,$bg,$tf){
+  width: $w;
+  height: $h;
+  background: $bg;
+  transform: $tf;
+}
+@mixin margin($margin){
+  margin: $margin;
+}
+@mixin padding($padding){
+  padding: $padding;
+}
+
+%co1 {
+  color:$color1 ;
+}
+%co2 {
+  color:$color2 ;
+}
+%co3 {
+  color:$color3 ;
+}
+%co4 {
+  color:$color4 ;
+}
+%bg-co1 {
+  background-color:$color1 ;
+}
+%bg-co2 {
+  background-color:$color2 ;
+}
+%bg-co4 {
+  background-color:$color4;
+}
+%t-center {
+  text-align: center;
+}
+
+.bg-co1 {
+  @extend %bg-co1;
+}
+.bg-co2 {
+  @extend %bg-co2;
+}
+.bg-co4 {
+  @extend %bg-co4;
+}
+
+
+.head {
+  height: 60px;
+  @include bg-c(#29BDE0);
+}
+
+
+.t-box {
+  position: relative;
+  @include box(90%,100px);
+  @extend %bg-co2;
+  @include margin(30px auto);
+  font-size:calc(3vw + 14px);
+  white-space: nowrap;
+  color: #9A9A9A;
+  line-height: 100px;
+  @extend %t-center;
+  @include border(1px solid #C9C9C9 );
+}
+.t-img {
+  @include position(absolute,top,calc(50% - 20px),right,20px);
+  @include box(24px,40px);
+  @include sprite(24px,40px,
+          url(images-task13/t.png) -379px -85px no-repeat,
+          scale(0.9));
+}
+.main-box {
+  position: relative;
+  @include flex(flex,column,space-around,center);
+  @include box(90%,640px);
+  @extend %bg-co2;
+  @include margin(30px auto);
+  @include border(1px solid #C9C9C9 );
+}
+.box1 {
+  @include box(100%,40px);
+  @include font(1.6em,#FBB435,center,30px);
+  border-bottom: 1px solid #FBB435;
+}
+.box2 {
+  @include box(70%,90px);
+  @include margin(0 auto);
+  @include font(1.45em,#fff,center,90px);
+  @include bg-c(#69D1E9);
+}
+.text {
+  font-size: 1em;
+  @extend %t-center;
+  color: #787878;
+  margin: 5px auto ;
+}
+.m-img {
+  @include position(absolute,top,calc(50% - 45px),right,12px);
+  @include sprite(28px,55px,
+          url(images-task13/t.png) -379px -10px no-repeat,
+          scale(0.8));
+}
+.bottom-box{
+  display: flex;
+  justify-content: space-around;
+  @include box(100px,20px);
+  @include margin(0 auto);
+}
+.circle {
+  @include box(18px,18px);
+  border-radius:50%;
+}
+
+label {
+  @include position(absolute,top,17px,left,25px);
+  @include sprite(34px,27px,
+          url(images-task13/t.png) -185px -307px no-repeat,
+          scale(0.9));
+  transition: all 1.2s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+input {
+  @include position(absolute,top,0px,left,0px);
+}
+
+.checkbox1 {
+  @include position(absolute,top,0px,left,0px);
+  width: 100%;
+  overflow: hidden;
+}
+
+.checkbox1 input[type=checkbox]:checked ~ label {
+  left: 80%;
+}
+.checkbox1 input[type=checkbox]:checked ~ .nnn{
+  transform: translateX(80%);
+}
+
+.nnn {
+  @include bg-c(#f0f0f0);
+  transition: all 1.2s ease;
+  height: 900px;
+  z-index: 2;
+}
+.mmm {
+  position: absolute;
+  @include flex(flex,column,flex-start,center);
+  @include bg-c(#fff);
+  @include font(1.2em,#69D1E9,left,normal);
+  @include box(80%,900px);
+}
+.m1 {
+  @include flex(flex,row,space-between,center);
+  @include padding(20px 0);
+  @include box(100%,20px);
+  border-bottom:1px solid #c0c0c0;
+}
+.ma {
+  margin: 0 20px;
+}
+.ma1 {
+  margin-left:15px;
+}
+.m-border{
+  position: absolute;
+  @include box(100%,100%);
+  border-right:20px solid #29bde0;
+}
+input[type=checkbox] {
+  visibility: hidden;
+}
+

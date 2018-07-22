@@ -100,7 +100,7 @@ label {
   height: 27px;
   background: url(images-task13/t.png) -185px -307px no-repeat;
   transform: scale(0.9);
-  transition: all 1.2s ease;
+  transition: all .6s ease;
   cursor: pointer;
   z-index: 3; }
 
@@ -124,7 +124,7 @@ input {
 
 .nnn {
   background-color: #f0f0f0;
-  transition: all 1.2s ease;
+  transition: all .6s ease;
   height: 900px;
   z-index: 2; }
 

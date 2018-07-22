@@ -154,7 +154,7 @@ label {
   @include sprite(34px,27px,
           url(images-task13/t.png) -185px -307px no-repeat,
           scale(0.9));
-  transition: all 1.2s ease;
+  transition: all .6s ease;
   cursor: pointer;
   z-index: 3;
 }
@@ -177,7 +177,7 @@ input {
 
 .nnn {
   @include bg-c(#f0f0f0);
-  transition: all 1.2s ease;
+  transition: all .6s ease;
   height: 900px;
   z-index: 2;
 }

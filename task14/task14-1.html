@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    maximum-scale=1.0, user-scalable=no"/>
+    <title>task14-1</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="communal.css">
+    <link rel="stylesheet" href="task14-1.css">
+</head>
+<body>
+
+<div class="top" >
+    <div class="top-l"  >客服热线：010-594-78634</div>
+    <div class="top-r" >
+        <div class="top-r1 "></div>
+        <div class="top-r2 "></div>
+        <div class="top-r3 "></div>
+    </div>
+    <div class="top-t">
+        <span>登录</span>
+        <span>|</span>
+        <span>注册</span>
+    </div>
+</div>
+
+<!--------------top-------------->
+
+<nav class="nav-bg" >
+    <div class="navbar">
+
+        <div class="logo"></div>
+
+        <div class="nav-ul">
+            <li class="nav-li">关于</li>
+
+            <a href="https://zzzheli.github.io/task14/task14-3.html/">
+                <li class="nav-li">推荐</li>
+            </a>
+
+            <a href="https://zzzheli.github.io/task14/task14-2.html/">
+                <li class="nav-li">职业</li>
+            </a>
+
+            <a href="https://zzzheli.github.io/task14/task14-1.html/">
+                <li class="nav-li">首页</li>
+            </a>
+        </div>
+
+    </div>
+</nav>
+<div class="btn2">
+    <input type="checkbox" value="1" id="btn2" name="" />
+    <label class="bg-green" for="btn2">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="list">
+
+        <a href="https://zzzheli.github.io/task14/task14-1.html/">
+            <li>首页</li>
+        </a>
+
+        <a href="https://zzzheli.github.io/task14/task14-2.html/">
+            <li>职业</li>
+        </a>
+
+        <a href="https://zzzheli.github.io/task14/task14-3.html/">
+            <li>推荐</li>
+        </a>
+
+        <li>关于</li>
+
+    </div>
+</div>
+
+
+<!--------------nav-------------->
+
+<div class="con" id="con">
+    <ul id="inner-con" style="left: 0;">
+        <li>
+            <img src="http://jns.img.bucket.ks3-cn-beijing.ksyun.com/skill/1/bedeaa60-ae9b-4e50-93b2-2c4182ad8c70.jpg" alt="">
+        </li>
+        <li>
+            <img src="http://jns.img.bucket.ks3-cn-beijing.ksyun.com/skill/1/716b4d3b-5e13-4bdd-ae6f-99b90ab2bd66.png" alt="">
+        </li>
+        <li>
+            <img src="http://jns.img.bucket.ks3-cn-beijing.ksyun.com/skill/1/3a15425b-c947-4222-8558-0bf01cc36513.png" alt="">
+        </li>
+        <li>
+            <img src="http://jns.img.bucket.ks3-cn-beijing.ksyun.com/skill/1/0d9944f1-6aad-4894-b42e-72dadcfef058.png" alt="">
+        </li>
+        <li>
+            <img src="http://jns.img.bucket.ks3-cn-beijing.ksyun.com/skill/1/d4ddb42c-5e07-4d86-809f-e08898aa800d.jpg" alt="">
+        </li>
+
+    </ul>
+    <ol id="ol">
+        <li style=""></li>
+        <li style=""></li>
+        <li style=""></li>
+        <li style="background: rgb(255, 255, 255);"></li>
+        <li style=""></li>
+
+    </ol>
+    <!-- 圆点点击事件 -->
+    <div class="btn">
+            <span class="left" id="left">
+                &lt; </span>
+        <span class="right" id="right"> &gt; </span>
+    </div>
+    <!-- 左右点击 -->
+</div>
+
+
+
+<script>
+    var oBcon = document.getElementById("con");
+    var oUl = document.getElementById("inner-con");
+    var oLeft = document.getElementById("left");
+    var oRight = document.getElementById("right");
+    var cur = 0; //定义变量设置left的值；
+    var timer = null; /* 定义一个计时器 */
+    var target = 0; /* 目标值 */
+    var timer1 = null;
+    var i = 0
+    timer = setInterval(autoplay, 2000); //定义计时器执行函数
+    function autoplay() {
+        if (target <= -400) {
+            cur = 100;
+            target = 0;
+        } else {
+            target -= 100;
+        }
+        sport(target);
+
+        btnBottom();
+    }
+
+    oLeft.onclick = function (argument) {
+        if (target >= 0) {
+            cur -= 500;
+            target = -400;
+        } else {
+            target += 100;
+        }
+        sport(target);
+        btnBottom();
+    }
+
+    oRight.onclick = function (argument) {
+        if (target <= -400) {
+            cur = -100;
+            target = 0;
+        } else {
+            target -= 100;
+        }
+        sport(target);
+        btnBottom();
+    }
+    //点击事件
+    btnBottom(i);
+    function btnBottom() {
+        i = -(target / 100);
+        i == 5 ? i = 0 : i;
+        var oUl = document.getElementById("ol");
+        var oLi = oUl.getElementsByTagName("li");
+        for (j = 0; j < oLi.length; j++) {
+            oLi[j].style.background = '';
+        }
+        oLi[i].style.background = '#fff';
+    }
+
+    var oOl = document.getElementById("ol");
+    var oLi = oOl.getElementsByTagName("li");
+    for (j = 0; j < oLi.length; j++) {
+        oLi[j].index = j;
+        oLi[j].onclick = function () {
+            target = -(this.index * 100);
+            sport(target);
+            btnBottom();
+        }
+    }
+
+    function sport(tar) {
+        clearInterval(timer1);
+        timer1 = setInterval(autoplay1, 30);
+
+        function autoplay1() {
+            if (tar == cur) {
+                clearInterval(timer1);
+            } else {
+                speed = (tar - cur) / 7;
+                speed = (speed > 0) ? Math.ceil(speed) : Math.floor(speed);
+                cur = cur + speed;
+                oUl.style.left = cur + "%";
+            }
+        }
+    }
+
+    oBcon.onmousemove = function () {
+        clearInterval(timer);
+    }
+
+    oBcon.onmouseout = function () {
+        timer = setInterval(autoplay, 2000);
+    }
+</script>
+
+
+<!--------------banner-------------->
+
+
+
+<div class="main-con">
+
+    <div class="content-con">
+        <div class ="con1">
+
+        <div class="con1-1" >
+            <div class="img1"></div>
+            <div class="tx1">高效</div>
+            <div class="tx2">将五到七年的成长时间，缩短 到一年到三年。</div>
+        </div>
+        <div class="con1-1 " >
+            <div class="img2" ></div>
+            <div class="tx1" >规范</div>
+            <div class="tx2" >标准的实战教程，不会走弯路。</div>
+        </div>
+        <div class="con1-1 " >
+            <div class="img3" ></div>
+            <div class="tx1" >人脉</div>
+            <div class="tx2" >同班好友，同院学长，技术大师，入学就混入职业圈，为以后铺平道路。</div>
+        </div>
+        <span class="border "></span>
+            <div class="con1-2 " >
+                <div class="im">
+                    <div class="img4" ></div><div class="img4t " >12400</div>
+                </div>
+                <div class="tx2" >累计在线人数</div>
+                <div class="im">
+                    <div class="img4" ></div><div class="img4t " >12400</div>
+                </div>
+                <div class="tx2" >学员已找到满意工作</div>
+            </div>
+
+        </div>
+
+            <!-------------con1--------------->
+
+            <div class="con2">
+                <div class="con2-tx" >如何学习</div>
+
+
+                <div class="con2-1">
+
+                    <div class="con2-1-1">
+                    <div class="circle " >
+                        <div class="num">1</div>
+                    </div>
+                    <span class="con2-tx1">匹配你现在的个人情况 寻找适合自己的岗位</span>
+                </div>
+                    <div class="con2-img" ></div>
+
+                    <div class="con2-1-1">
+                        <div class="circle " >
+                            <div class="num">2</div>
+                        </div>
+                        <span class="con2-tx1">了解职业前景薪金待遇，竞争压力等</span>
+                    </div>
+                    <div class="con2-img1" ></div>
+
+                    <div class="con2-1-1">
+                        <div class="circle " >
+                            <div class="num">3</div>
+                        </div>
+                        <span class="con2-tx1">掌握行业内顶级技能</span>
+                    </div>
+                    <div class="con2-img" ></div>
+
+                    <div class="con2-1-1">
+                        <div class="circle " >
+                            <div class="num">4</div>
+                        </div>
+                        <span class="con2-tx1">查看职业目标任务</span>
+                    </div>
+
+                </div>
+
+                <div class="con2-1">
+
+                    <div class="con2-1-1">
+                        <div class="circle " >
+                            <div class="num">5</div>
+                        </div>
+                        <span class="con2-tx1">参考学习资源，掌握技能点，逐个完成任务</span>
+                    </div>
+                    <div class="con2-img" ></div>
+
+                    <div class="con2-1-1">
+                        <div class="circle " >
+                            <div class="num">6</div>
+                        </div>
+                        <span class="con2-tx1">加入班级，和小伙伴互帮互助，一块学习</span>
+                    </div>
+                    <div class="con2-img1" ></div>
+
+                    <div class="con2-1-1">
+                        <div class="circle " >
+                            <div class="num">7</div>
+                        </div>
+                        <span class="con2-tx1">选择导师，一路引导，加速自己成长</span>
+                    </div>
+                    <div class="con2-img" ></div>
+
+                    <div class="con2-1-1">
+                        <div class="circle " >
+                            <div class="num">8</div>
+                        </div>
+                        <span class="con2-tx1">完成职业技能，升级业界大牛</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+                <!-------------con2--------------->
+
+        <div class="con3">
+            <div class="con2-tx" >优秀学员展示</div>
+            <div class="con3-1 " >
+
+                <div class="con3-1-1" >
+                    <div class="con3-img1"></div>
+                    <div class="con3-tx1">技术顾问：罗大佑</div>
+                    <div class="con3-tx2" >百度技术总监：互联网基础 服务领域
+                        ，从事虚拟主机、 云服务器、域名。曾任新网 高级技术经理，
+                        负责技术研 发、团队管理与建设。
+                    </div>
+                </div>
+                <div class="con3-1-1" >
+                    <div class="con3-img2"></div>
+                    <div class="con3-tx1">技术顾问：罗大佑</div>
+                    <div class="con3-tx2" >百度技术总监：互联网基础 服务领域
+                        ，从事虚拟主机、 云服务器、域名。曾任新网 高级技术经理，
+                        负责技术研 发、团队管理与建设。
+                    </div>
+                </div>
+                <div class="con3-1-1" >
+                    <div class="con3-img3"></div>
+                    <div class="con3-tx1">技术顾问：罗大佑</div>
+                    <div class="con3-tx2" >百度技术总监：互联网基础 服务领域
+                        ，从事虚拟主机、 云服务器、域名。曾任新网 高级技术经理，
+                        负责技术研 发、团队管理与建设。
+                    </div>
+                </div>
+
+                <div class="con3-1-1" >
+                    <div class="con3-img4"></div>
+                    <div class="con3-tx1">技术顾问：罗大佑</div>
+                    <div class="con3-tx2" >百度技术总监：互联网基础 服务领域
+                        ，从事虚拟主机、 云服务器、域名。曾任新网 高级技术经理，
+                        负责技术研 发、团队管理与建设。
+                    </div>
+                </div>
+
+            </div>
+            <div class="con3-c">
+                <div class="con3-c1 bg-green" ></div>
+                <div class="con3-c1 bg-white" ></div>
+                <div class="con3-c1 bg-white" ></div>
+                <div class="con3-c1 bg-white" ></div>
+            </div>
+
+            </div>
+
+        <!-------------con3--------------->
+
+        <div class="con4">
+
+            <div class="con2-tx" >战略合作企业</div>
+            <div class="con4-1" >
+
+                <div class="con4-1-1" >
+                    <div class="con4-img1"></div>
+                </div>
+
+                <div class="con4-1" >
+                    <div class="con4-1-1" >
+                        <div class="con4-img2"></div>
+                    </div>
+                </div>
+                <div class="con4-1" >
+                    <div class="con4-1-1" >
+                        <div class="con4-img3"></div>
+                    </div>
+                </div>
+                <div class="con4-1" >
+                    <div class="con4-1-1" >
+                        <div class="con4-img4"></div>
+                    </div>
+                </div>
+                <div class="con4-1" >
+                    <div class="con4-1-1" >
+                        <div class="con4-img5"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        </div>
+
+
+    <!-------------con4--------------->
+
+
+
+
+    <div class="con5 bg-white">
+        <div class="con2-tx"> 友情链接</div>
+        <div class="con5-1">
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">手机软件</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">教师招聘</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">教师招聘</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">找工作</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">找工作</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">教师招聘</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">教师招聘</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">手机软件</span>
+            </div>
+
+        </div>
+
+        <div class="con5-1">
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">手机软件</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">教师招聘</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">教师招聘</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">找工作</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">找工作</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">教师招聘</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">教师招聘</span>
+            </div>
+            <div class="con5-1-1">
+                <div class="con5-c"></div><span class="con5-tx">手机软件</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-------------con5--------------->
+
+
+    <div class="con6s bg-green">
+        <div class="con6">
+            <div class="con6-1 c-padding">
+                <span class="con6-tx1">  技能树 — 改变你我 </span>
+              <div>
+                <span class="con6-tx1"> 关于我们  </span>
+                  <span class="con6-tx1"> | 联系我们  </span>
+                  <span class="con6-tx1"> | 合作企业 </span>
+              </div>
+            </div>
+
+
+            <div class="con6-1 c-padding">
+                <span class="con6-tx1">旗下网站</span>
+                <div class="con6-tx1">
+                    <div class="con6-tx3">草船云孵化器</div>
+                </div>
+                <div class="con6-tx1">
+                    <div class="con6-tx3">葡萄藤轻游戏</div>
+                </div>
+
+
+                <div class="con6-1">
+                    <span class="con6-tx2">&#160</span>
+                    <div class="con6-tx1">
+                        <div class=con6-tx3">最强IT特训营</div>
+                    </div>
+                    <div class="con6-tx1">
+                        <div class="con6-tx3">桌游精灵</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="con6-2">
+                <div class="con6-tx1">微信公众平台</div>
+                <div class="con6-img1">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="con7 bg-green">  Copyright © 2015技能树
+        www.jnshu.com  All Rights Reserved | 京ICP
+    </div>
+
+
+
+    <!-------------con7--------------->
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

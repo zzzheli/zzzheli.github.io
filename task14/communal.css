@@ -1,0 +1,238 @@
+.bg-green {
+    background-color: #218c60; }
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 36px;
+    margin: 0 auto;
+    font-size: 0.9em;
+    color: #29B078; }
+
+.top-r {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px; }
+
+.top-r1 {
+    width: 25px;
+    height: 24px;
+    background: url(images-task14/m.png) -79px -10px no-repeat;
+    transform: scale(1); }
+
+.top-r2 {
+    width: 25px;
+    height: 24px;
+    background: url(images-task14/m.png) -124px -10px no-repeat;
+    transform: scale(1); }
+
+.top-r3 {
+    width: 25px;
+    height: 24px;
+    background: url(images-task14/m.png) -169px -10px no-repeat;
+    transform: scale(1); }
+
+.top-t {
+    display: none;
+    margin: 0 -20px 0 0; }
+
+@media (max-width: 768px) {
+    .top-t {
+        display: block; }
+
+    .top {
+        justify-content: flex-end;
+        padding-right: 20px; }
+
+    .top-r {
+        display: none; }
+
+    .top-l {
+        display: none; } }
+@media all and (max-width: 1200px) {
+    .top {
+        width: 90%; } }
+
+/*----------------------------top-----------------------------*/
+
+.nav-bg {
+    background-color: #29b078; }
+
+.navbar {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto; }
+
+.logo {
+    float: left;
+    width: 107px;
+    height: 49px;
+    background: url(images-task14/m.png) -663px -10px no-repeat;
+    transform: scale(0.9);
+    margin-top: 26px; }
+
+.nav-li {
+    float: right;
+    width: 100px;
+    height: 100px;
+    font-size: 1.05em;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    box-sizing: border-box; }
+
+.nav-ul li:hover {
+    border-bottom: 5px solid #fff; }
+
+a {
+    color: #fff; }
+
+.btn2 {
+    display: none; }
+
+label {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 100; }
+
+label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #95ffd2;
+    margin: 7.2px auto; }
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+input[type=checkbox] {
+    visibility: hidden; }
+
+.list li {
+    font-size: 1.05em;
+    color: #fff;
+    text-align: center;
+    height: 0;
+    background-color: #29b078; }
+
+.btn2 input[type=checkbox]:checked ~ .list li {
+    height: 50px;
+    line-height: 50px;
+    transition: height .5s ease; }
+
+.list li:hover {
+    color: #000;
+    background-color: #47d096; }
+
+@media all and (max-width: 1200px) {
+    .navbar {
+        width: 90%; } }
+@media all and (max-width: 767px) {
+    .nav-bg {
+        border-bottom: 1px #4dbd6e solid; }
+
+    .navbar {
+        height: 55px; }
+
+    .nav-ul {
+        display: none; }
+
+    .logo {
+        margin-top: 5px;
+        transform: scale(0.81); }
+
+    .btn2 {
+        display: block; } }
+/*----------------------------nav-----------------------------*/
+.bg-white {
+    background-color: #fff; }
+
+.con6s {
+    width: 100%; }
+
+.con6 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+
+.con6-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 90px; }
+
+.con6-tx1 {
+    font-size: 0.8em;
+    color: #fff; }
+
+.con6-tx2 {
+    font-size: 0.8em; }
+
+.con6-tx3 {
+    padding-right: 15px; }
+
+.con6-img1 {
+    width: 93px;
+    height: 92px;
+    background: url(images-task14/m.png) -550px -10px no-repeat;
+    transform: scale(0.85); }
+
+.con6-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.con6-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 90px; }
+
+.con7 {
+    padding: 10px;
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid #32C086; }
+
+.con6-tx1:hover {
+    text-decoration: underline; }
+
+@media (min-width: 1200px) {
+    .con6 {
+        width: 1200px;
+        justify-content: space-between; } }
+@media (max-width: 600px) {
+    .con6 {
+        width: 190px;
+        justify-content: space-between;
+        margin: 10px 0 0 20px; }
+    .con6-1{
+        height: auto;}
+    .con6-1.c-padding {
+        padding-left: 8px; }
+    .con6-3 {
+        height: auto; }
+    .con6-tx1 {
+        padding: 10px 0;
+    }
+    .con6-tx2 {
+        font-size: 0;
+    }
+}
+
+/*--------------------------con7-------------------------*/

@@ -344,7 +344,7 @@ img {
   text-decoration: underline; }
 
 /*---------------------------con5--------------------------*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .con3-1 {
     width: 1200px;
     justify-content: space-between; }

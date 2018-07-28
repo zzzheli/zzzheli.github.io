@@ -53,13 +53,13 @@ body {
 
 
 
-.main-con {
+.main-box {
   width: 1200px;
-  margin: 0 auto 100px auto;
+  @include margin(0 auto 100px auto);
 }
 .green {color: #29B078;}
 .con1  {
-  line-height: 80px;
+  @include l-h(80px);
   font-size: 1.25em;
   border-bottom: 1px solid #D0D6D9;
 }
@@ -75,12 +75,12 @@ body {
   padding-right: 10px;
 }
 .green1 {
-  background-color: #29B078 ;
+  @include bg-c(#29b078);
   color: #fff;
   margin-right: 10px;
 }
 .b {
-  margin: 20px;
+  @include margin(20px);
 }
 
 
@@ -88,9 +88,7 @@ body {
 
 
 .con3 {
-  display: flex;
-  align-items: center;
-  height: 80px;
+  @include l-h(75px);
   font-size: 1.3em;
   font-weight: bold;
   border-bottom: 1px solid #D0D6D9;
@@ -98,12 +96,12 @@ body {
 }
 .con4 {
   display: flex;
-  flex-wrap: wrap;
+  @include f-wrap(wrap);
 }
 .con4-1 {
   position: relative;
   width: 370px;
-  margin: 30px 45px 30px 0;
+  @include margin(30px 45px 30px 0);
   border-radius: 3px;
   background-color: #fff;
   box-shadow: #E2E2E2 0 0 2px 1px;
@@ -119,10 +117,9 @@ body {
   border-bottom: 1px solid #D0D6D9;
 }
 .con4-img1 {
-  width: 139px;
-  height:139px;
-  background: url(images-task14/m.png) -1743px -10px no-repeat;
-  transform: scale(.9);
+  @include sprite(139px,139px,
+          url(images-task14/m.png) -1743px -10px no-repeat,
+          scale(.9));
 }
 .con4-tx1 {
   font-size: 1.15em;
@@ -136,12 +133,12 @@ body {
 }
 .con4-r {
   font-size: .9em;
-  margin: 6px;
+  @include margin(6px);
   color: #ff0000;
 }
 .con4-b {
   font-size: .9em;
-  margin: 6px 0;
+  @include margin(6px 0);
 }
 
 .blo1 {
@@ -161,16 +158,13 @@ body {
   border-right:0;
 }
 .star {
-  width: 16px;
-  height:15px;
-  background: url(images-task14/m.png) -43px -10px no-repeat;
-  transform: scale(1);
-  margin: 5px;
+  @include sprite(16px,15px,
+          url(images-task14/m.png) -43px -10px no-repeat,
+          scale(1));
+  @include margin(5px);
 }
 .con4-1-2-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex,center,center);
   width: 40%;
   border-right: 1px solid #D0D6D9;
 }
@@ -178,44 +172,43 @@ body {
   width: 100%;
 }
 
-.j2e {
+.years {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #D0D6D9;
 }
 
-.j2e:last-child {
+.years:last-child {
   border-bottom: 0;
 }
 .gray2 {
   font-size: .8em;
   color: #999;
-  padding: 12px 8px 12px 8px;
+  @include padding(12px 8px);
 }
 
 .con4-1ho{
   position: absolute;
-  display: none;
-  width: 100%;
-  height: 100%;
+  @include con(100%,0);
   background-color: #000;
+  border-radius: 3px;
   opacity:0.75;
   z-index: 10;
-  @include font(1.05em,#fff,center);
+  @include font(0,#fff,center);
   @include l-h(30px);
-
 }
 .ho1{
-  margin: 10px auto 0 auto;
-
+  @include margin(10px auto 0 auto);
 }
 .ho{
-  padding: 0 2%;
+  @include padding(0 2%);
 }
 
 .con4-1:hover .con4-1ho{
   display: block;
   transition: all 1s ease;
+  font-size: 1.05em;
+  height: 100%;
 }
 
 
@@ -224,14 +217,13 @@ body {
 
 
 
-
 @media screen and (max-width: 1200px) {
-  .main-con {
+  .main-box {
     width: 90%;
   }
   .con4-1 {
     width: 31%;
-    margin: 30px 3% 30px 0;
+    @include margin(30px 3% 30px 0);
   }
   .con4-tx1 {
     width: 150px;
@@ -242,16 +234,12 @@ body {
   }
 }
 
-
-
-
 @media screen and (max-width: 1024px) {
-  .main-con {
+  .main-box {
     width: 80%;
   }
   .con4-1 {
     width: 300px;
-    margin: 30px 3% 30px 0;
   }
   .con4-1:nth-child(2) {
     margin-right: 0;
@@ -287,7 +275,7 @@ body {
   }
 }
 @media screen and (max-width: 420px) {
-  .main-con {
+  .main-box {
     width: 300px;
   }
 }

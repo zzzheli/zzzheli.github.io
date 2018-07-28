@@ -47,8 +47,8 @@
 }
 
 
-.main-con {
-  background: #FAFAFA;
+.main-box {
+  @include bg-c(#fafafa);
 }
 .con1  {
   width: 1200px;
@@ -56,7 +56,7 @@
   @include padding(20px 0);
   @include margin(0 auto);
 }
-.content-con{
+.content-box{
   display: flex;
   width: 1200px;
   @include margin(0 auto);
@@ -85,8 +85,7 @@
   @include margin(30px auto);
 }
 .con2-2-c {
-  width: 13px;
-  height: 13px;
+  @include con(13px,13px);
   border-radius: 50%;
   border: 1px  solid #FF650E;
   margin-right: 6px;
@@ -114,9 +113,7 @@
 }
 
 .con3-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex,center,center);
   height: 180px;
   border-bottom: 1px solid #E2E2E2;
 }
@@ -141,11 +138,7 @@
 }
 
 
-
-
 /*/----------------------------con3-----------------------------/*/
-
-
 
 
 @media screen and (max-width: 1200px){
@@ -153,19 +146,19 @@
     width: 80%;
     margin: 0 auto;
   }
-  .content-con {
+  .content-box {
     width: 80%;
     margin: 0 auto;
   }
-  .content-con .con2 {
+  .content-box .con2 {
     width: 16%;
 
   }
-  .content-con .con2-1 {
+  .content-box .con2-1 {
     font-size: 1.2em;
 
   }
-  .content-con .con3 {
+  .content-box .con3 {
     width: 81%;
   }
   .con3-tx{
@@ -191,17 +184,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .main-con {
-    display: flex;
+  .content-box {
     flex-direction: column;
   }
-  .content-con {
-    display: flex;
-    flex-direction: column;
-  }
-  .content-con .con2 {
-    width: 100%;
-    height: auto;
+  .content-box .con2 {
+    @include con(100%,auto);
     margin-bottom: 50px;
   }
   .con2-2 {
@@ -209,19 +196,18 @@
     flex-wrap: wrap;
   }
   .con2-2-1 {
-    margin: 10px 5px;
+    @include margin(10px 5px);
   }
-  .content-con .con3 {
+  .content-box .con3 {
     width: 100%;
   }
   .con3-1 {
     flex-direction: column;
-    width: 100%;
     height: auto;
   }
   .con3-tx{
     width: 76%;
-    margin: 0 0 20px 0;
+    @include margin(0 0 20px 0);
   }
 }
 

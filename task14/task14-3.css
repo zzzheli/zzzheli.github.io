@@ -1,7 +1,7 @@
 body {
   background-color: #fafafa; }
 
-.main-con {
+.main-box {
   width: 1200px;
   margin: 0 auto 100px auto; }
 
@@ -25,7 +25,7 @@ body {
   padding-right: 10px; }
 
 .green1 {
-  background-color: #29B078;
+  background-color: #29b078;
   color: #fff;
   margin-right: 10px; }
 
@@ -34,9 +34,7 @@ body {
 
 /*/----------------------------con2----------------------------/*/
 .con3 {
-  display: flex;
-  align-items: center;
-  height: 80px;
+  line-height: 75px;
   font-size: 1.3em;
   font-weight: bold;
   border-bottom: 1px solid #D0D6D9;
@@ -122,28 +120,28 @@ body {
 .con4-1-2-3 {
   width: 100%; }
 
-.j2e {
+.years {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #D0D6D9; }
 
-.j2e:last-child {
+.years:last-child {
   border-bottom: 0; }
 
 .gray2 {
   font-size: .8em;
   color: #999;
-  padding: 12px 8px 12px 8px; }
+  padding: 12px 8px; }
 
 .con4-1ho {
   position: absolute;
-  display: none;
   width: 100%;
-  height: 100%;
+  height: 0;
   background-color: #000;
+  border-radius: 3px;
   opacity: 0.75;
   z-index: 10;
-  font-size: 1.05em;
+  font-size: 0;
   color: #fff;
   text-align: center;
   line-height: 30px; }
@@ -156,11 +154,13 @@ body {
 
 .con4-1:hover .con4-1ho {
   display: block;
-  transition: all 1s ease; }
+  transition: all 1s ease;
+  font-size: 1.05em;
+  height: 100%; }
 
 /*/----------------------------con4----------------------------/*/
 @media screen and (max-width: 1200px) {
-  .main-con {
+  .main-box {
     width: 90%; }
 
   .con4-1 {
@@ -174,12 +174,11 @@ body {
   .con4-tx2, .con4-b, .con4-r, .gray2 {
     font-size: .7em; } }
 @media screen and (max-width: 1024px) {
-  .main-con {
+  .main-box {
     width: 80%; }
 
   .con4-1 {
-    width: 300px;
-    margin: 30px 3% 30px 0; }
+    width: 300px; }
 
   .con4-1:nth-child(2) {
     margin-right: 0; }
@@ -206,7 +205,7 @@ body {
   .b {
     margin: 15px; } }
 @media screen and (max-width: 420px) {
-  .main-con {
+  .main-box {
     width: 300px; } }
 /*//---------------------------media-------------------------//*/
 

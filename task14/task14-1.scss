@@ -114,13 +114,11 @@ img {
 
 
 
-.main-con {
-  display: flex;
-  flex-direction: column;
+.main-box {
   @include bg-c(#fafafa);
   @include padding(50px 0 0 0);
 }
-.content-con {
+.content-box {
   width: 1200px;
   @include margin(0 auto);
 }
@@ -412,7 +410,7 @@ img {
 }
 
 @media screen and (max-width: 1200px){
-  .content-con {
+  .content-box {
     width: 980px;
   }
   .con3 .con3-1-1 {
@@ -424,7 +422,7 @@ img {
   }
 }
 @media (max-width: 1023px){
-  .content-con {
+  .content-box {
     width: 760px;
   }
   .border {
@@ -454,7 +452,7 @@ img {
   .border{
     display: none;
   }
-  .content-con {
+  .content-box {
     width: 600px;
   }
   .con1 {
@@ -468,7 +466,7 @@ img {
   }
 }
 @media (max-width: 600px){
-  .content-con {
+  .content-box {
     width: 260px;
   }
   .con2 {

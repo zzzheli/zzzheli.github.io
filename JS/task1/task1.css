@@ -1,0 +1,29 @@
+.max{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    width: 31%;
+    padding-top:31%;
+    margin: 1.1%;
+    background-color:#ffa500;
+    border-radius:8%;
+}
+#btn1 {
+    border:1px solid #ffa500;
+    border-radius: 5px;
+    color:#ffa500 ;
+    font-size: 1.2em;
+    line-height: 36px;
+    text-align: center;
+    margin: 20px 0;
+}
+#btn2 {
+     border:1px solid #ffa500;
+     border-radius: 5px;
+     color:#ffa500 ;
+     font-size: 1.2em;
+     line-height: 36px;
+     text-align: center;
+     margin: 20px 0;
+ }

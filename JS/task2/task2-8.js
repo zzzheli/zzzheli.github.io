@@ -37,9 +37,12 @@ $(document) .ready(function () {
             $('.day').eq(dateNum-1).text("白天? 再也没有白天了！无限ツクヨミ！");
         }
         // 杀完人结束
+        // if (arrKillDead[i-1] == undefined){
+        //     $('.day').eq(i-1).text("平民胜利了！愿圣光永远照耀着您！");
+        //     $('.night').eq(i-1).text("");
+        // }
         if (arrKillDead[i-1] == undefined){
-            $('.day').eq(i-1).text("平民胜利了！愿圣光永远照耀着您！");
-            $('.night').eq(i-1).text("");
+            $('.txtBox').eq(i-1).hide();
         }
     }
 });

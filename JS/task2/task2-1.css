@@ -1,0 +1,131 @@
+.bg-co1 {
+  background-color: #69D1E9; }
+
+.bg-co2, .t-box, .main-box {
+  background-color: #fff; }
+
+.bg-co4 {
+  background-color: #f0f0f0; }
+
+.t-box, .text {
+  text-align: center; }
+
+#Cygnus{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #29BDE0;
+  z-index: 5;
+}
+.cy{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 680px;
+  height: 697px;
+  background: url(images-task2/Cy.png)  no-repeat center;
+  zoom: .4;
+}
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #29BDE0;
+  z-index: 3;}
+
+.t-box {
+  position: relative;
+  top: 50px;
+  width: 90%;
+  margin: 20px auto;
+  font-size: 20px;
+  color: #9A9A9A;
+  line-height: 55px;
+  border: 1px solid #C9C9C9; }
+
+.t-img {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 20px;
+  width: 24px;
+  height: 40px;
+  background: url(images-task2/s.png) -44px -10px no-repeat;
+  transform: scale(0.9); }
+
+.main-box {
+  position: relative;
+  top: 50px;
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #C9C9C9; }
+.m-box {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;}
+
+.box1 {
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #FBB435;
+  text-align: center;
+  border-bottom: 1px solid #FBB435; }
+
+.box2 {
+  position: relative;
+  width: 70%;
+  font-size: 1.4em;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  background-color: #69D1E9; }
+
+.text {
+  font-size: .95em;
+  color: #787878;
+  margin: 5px auto; }
+
+.m-img {
+  position: absolute;
+  top: calc(50% - 36px);
+  right: 10px;
+  width: 28px;
+  height: 55px;
+  background: url(images-task2/s.png) -133px -10px no-repeat;
+  transform: scale(0.8); }
+
+.bottom-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 20px;
+ }
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; }
+
+.h-img {
+  position: absolute;
+  top: 11px;
+  left: 25px;
+  width: 34px;
+  height: 27px;
+  background: url(images-task2/s.png) -327px -10px no-repeat;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+body {
+  background-color: #f0f0f0;
+}

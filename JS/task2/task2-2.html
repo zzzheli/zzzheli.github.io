@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    maximum-scale=1.0, user-scalable=no"/>
+    <title>task2-2</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="task2-2.css">
+    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="head">
+    <div class="h-img1" id="h-img1"></div>
+    参数设置
+    <div class="h-img2"></div>
+</div>
+
+<div class="mainBox">
+<div class="top1-box">玩家配比</div>
+
+<div class="top2-box">
+    <div class="top2-img">
+        <img src="images-task2/n2.png" width="30px" />
+        <span >&#160 杀手 &#160</span> <span id="killers" ></span> <span >&#160 人</span>
+        <!--<span >&#160 杀手 &#160</span> <span id="killers" onchange="kiOrCi()" ></span> <span >&#160 人</span>-->
+    </div>
+    <div class="top2-img">
+        <img src="images-task2/m1.png" width="30px" />
+        <span >&#160 平民 &#160</span> <span id="civilians"></span><span >&#160 人</span>
+    </div>
+
+</div>
+
+<div class="top3-box">
+  <div class="top3-tx">
+    <div>点击设置</div>
+    <div class="blue"></div>
+
+  </div>
+</div>
+<div class="top3-box">
+    <div class="top3-1">
+        <span>请输入玩家数量 &#160</span>
+        <input  type="text" name=""  id="playersNum"   value="4" min="4" max="18"  />
+        <!--<input  type="text" name=""  id="playersNum"  onchange="pNumber()" value="4" min="4" max="18"  />-->
+        <span class="tx1">&#160 玩家数量为4-18</span>
+    </div>
+    <div class="top3-1">
+        <div id="top3-img1" ></div>
+        <!--<div class="top3-img1" onclick="btnLeft()"></div>-->
+        <input type="range" id="rangeNumber"  value="4" min="4" max="18" step="1" >
+        <!--<input type="range" id="rangeNumber" oninput="slid()"  value="4" min="4" max="18" step="1" >-->
+        <div id="top3-img2" ></div>
+        <!--<div class="top3-img2" onclick="btnRight()"></div>-->
+
+    </div>
+</div>
+
+<div id="deal">去发牌</div>
+</div>
+<script src="task2-2.js"></script>
+</body>
+</html>

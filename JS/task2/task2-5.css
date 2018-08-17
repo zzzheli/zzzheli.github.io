@@ -1,0 +1,156 @@
+body {
+    background-color: #f0f0f0;
+}
+/*.bg-co1 {*/
+    /*background-color: #69D1E9; }*/
+
+.bg-co2, .date, .dateNow,.main-box {
+    background-color: #fff; }
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    line-height: 50px;
+    font-size: 1.3em;
+    text-align: center;
+    border-bottom: 1px #a1dbe9  solid;
+    background-color: #29BDE0;
+    z-index: 5;
+}
+.h-img1 {
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    width: 25px;
+    height: 41px;
+    background: url(images-task2/s.png) -88px -10px no-repeat;
+    transform: scale(0.75);
+    cursor: pointer;
+}
+.h-img2 {
+    position: absolute;
+    top: 6px;
+    right: 25px;
+    width: 36px;
+    height: 36px;
+    background: url(images-task2/s.png) -381px -10px no-repeat;
+    transform: scale(0.75);
+    cursor: pointer;
+}
+.addBox {
+    position: relative;
+    top: 50px;
+}
+.all{
+    padding-bottom: 150px;
+}
+
+.date,.dateNow{
+    position: relative;
+    width: 90%;
+    margin: 10px auto 10px auto;
+    font-size: 20px;
+    color: #29BDE0;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #C9C9C9; }
+
+.triangle{
+    position: relative;
+    width:0;
+    border-width: 0 10px 12px 10px;
+    border-style:solid;
+    border-color: transparent transparent #fff transparent;
+    margin: -12px auto 0 auto;
+}
+
+.main-box {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #C9C9C9;
+}
+
+.box{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.kill,.tell,.speak,.vote {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(41, 189, 224); }
+
+
+.triLeft1,.triLeft2,.triLeft3,.triLeft4 {
+    position: absolute;
+    top: 9px;
+    left: -15px;
+    height: 0;
+    border-width: 10px 15px 10px 0;
+    border-style:solid;
+    border-color:   transparent #29BDE0 transparent  transparent ;
+}
+
+.killTxt,.killOld,.voteOld {
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.border {
+    position: absolute;
+    top:30px;
+    left: -36px;
+    height: calc( 80% + 10px );
+    border-right: 2px solid #d8d5d5;
+}
+.logo1 {
+    position: absolute;
+    top: -10px;
+    left: -65px;
+    width: 60px;
+    height: 60px;
+    background: url(images-task2/s.png) -575px -10px no-repeat #fff;
+    transform: scale(0.6);
+}
+.logo2 {
+    position: absolute;
+    top: -10px;
+    left: -65px;
+    width: 60px;
+    height: 60px;
+    background: url(images-task2/s.png) -655px -10px no-repeat #fff;
+    transform: scale(0.6);
+}
+
+.foot {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(41, 189, 224, 0.5);
+    z-index: 3;
+}
+
+.btn1,.btn2 {
+    width: 35%;
+    line-height:50px ;
+    background-color: #FBB435;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 20px auto ;
+    border-radius: 5px;
+}
+
+.mark1{}
+.mark2{}

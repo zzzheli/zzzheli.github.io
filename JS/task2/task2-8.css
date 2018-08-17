@@ -1,0 +1,87 @@
+
+.head {
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    font-size: 1.3em;
+    text-align: center;
+    border-bottom: 1px #a1dbe9  solid;
+    background-color: #29BDE0; }
+.h-img1 {
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    width: 51px;
+    height: 42px;
+    background: url(images-task2/s.png) -504px -10px no-repeat;
+    transform: scale(0.6);
+    cursor: pointer;
+}
+
+.mainBox{
+
+    background-color: #29BDE0;
+}
+.Text{
+    margin-bottom: 100px;
+}
+.txtBox {
+    padding-top: 10px;
+    border-bottom: #9a9a9a solid 1px;
+    font-size: .95em;
+}
+.logo {
+    position: relative;
+    top: 20px;
+    left: calc( 50% - 175px );
+    width: 349px;
+    height: 205px;
+    background: url(images-task2/s.png) -735px -10px no-repeat;
+    zoom:.5;
+    margin-bottom: 50px;
+}
+.logoTx{
+    position: absolute;
+    top: 130px;
+    left: calc( 50% - 95px);
+    font-size: 3em;
+    color: #fff;
+}
+.remaining{
+    padding: 5px 15% ;
+}
+.font1{
+    font-size: .9em;
+    color: #fff;
+}
+.font2{
+    font-size: .9em;
+    color: #9a9a9a;
+}
+.remain{
+    padding-right: 50px ;
+
+}
+.foot {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(41, 189, 224, 0.5);
+    z-index: 3;
+}
+
+.btn1 {
+}
+
+
+.btn1 {
+    width: 35%;
+    line-height:40px ;
+    background-color: #f66f6f;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 20px auto ;
+    border-radius: 5px;
+}

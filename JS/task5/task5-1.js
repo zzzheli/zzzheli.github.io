@@ -73,7 +73,7 @@ $(document).ready(function () {
                 //         $('#warn').html(response.message);
                 //     }
                 // }
-                // 思路二 .success是有问题的
+                // 案二 .success判断还是有问题的
 
             });
         }

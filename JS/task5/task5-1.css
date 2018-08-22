@@ -1,0 +1,60 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(images-task5/3.png) no-repeat center;
+    background-size: cover;
+}
+.bg {
+    position: relative;
+    top: calc(50% - 110px);
+    width: 90%;
+    max-width: 360px;
+    background-color: #d3d7e0;
+    margin: 0 auto;
+    padding: 10px;
+}
+.head {
+    font-size: 1.2em;
+    color: #03a9f4;
+    text-align: center;
+    padding: 5px 0 10px 0;
+}
+.user,.psw{
+    width: 80%;
+    padding: 10px;
+    background-color: #fff;
+    margin:  0 auto 10px auto ;
+
+
+}
+.bg img {
+    border-right: 2px solid #EAEDEE;
+    vertical-align:middle;
+    padding: 0 10px 0 0px;
+}
+.bg input {
+    width: 40vw;
+    max-width: 200px;
+    border: 0;
+    margin: 0 0 0 10px;
+}
+
+#warn {
+
+    width: 80%;
+    height: 20px;
+    margin: 0 auto;
+    color: #ff0000;
+    text-align: center;
+}
+
+.login {
+    display: block;
+    width: 85%;
+    line-height:20px;
+    padding: 10px 0;
+    margin: 20px auto 10px;
+    background: #03a9f4;
+    color: #fff;
+    border-radius: 5px;
+}

@@ -70,7 +70,7 @@ $(document).ready(function () {
                 //     if(response.success){
                 //         location.href = 'http://dev.admin.carrots.ptteng.com';
                 //     }else {
-                //         $('#warn').html(response.message);
+                //         $('#warn').html(response.msg);
                 //     }
                 // }
                 // 案二 .success判断还是有问题的

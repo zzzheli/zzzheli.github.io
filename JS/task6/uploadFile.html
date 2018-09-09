@@ -1,0 +1,42 @@
+<div class="col-md-10">
+    <div class="col-md-12 padding-0">
+        <my-direct ></my-direct>
+        <label for="uploadFile" class="btn btn-primary" >选择文件</label>
+        <input type="file"
+               id="uploadFile"
+               name="file"
+               accept="image/png,image/jpeg"
+               style="display: none;"
+               onchange="angular.element(this).scope().readFile(this)"
+        />
+
+    </div>
+    <div class="col-md-12 padding-0">
+        <img ng-show='showImg' ng-src={{srcImg}} id="showImg" style="max-width: 100%;">
+    </div>
+    <div class="col-md-12 padding-0">
+        <div class="col-md-8 table-responsive padding-0">
+            <table class="table">
+                <thead>
+                <th>图片名</th>
+                <th>文件大小</th>
+                <th>进度</th>
+                <th>状态</th>
+                <th>操作</th>
+                </thead>
+                <tbody ng-show="showMsg" >
+                <td style="max-width: 180px;word-WRAP: break-word">{{fileName}}</td>
+                <td>{{fileSize | bytes:'MB'}}</td>
+                <td style="width: 70px"><uib-progressbar class="margin-bottom-0" value="progress">{{progress}}%</uib-progressbar></td>
+                <td>
+                    <span class="{{class}}"></span>
+                </td>
+                <td>
+                    <button ng-click="fileUpload()" class="btn btn-success" style="padding: 1px 6px;">上传</button>
+                    <button ng-click="fileDelete()" class="btn btn-danger" style="padding: 1px 6px;">删除</button>
+                </td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

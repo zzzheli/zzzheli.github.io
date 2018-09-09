@@ -1,0 +1,199 @@
+<div ng-controller="articleCtrl">
+
+    <!--搜索模块-->
+    <div class="panel search" >
+        <form class="panel-body padding-15-0" >
+            <div class="row ">
+                <div class="col-md-4">
+                    <!--日历部分-->
+                    <div class="form-group h34">
+                        <div class="col-md-4">
+                            <label>发布时间</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text"
+                                   class="form-control"
+                                   value="" ng-click="openStart()"
+                                   uib-datepicker-popup="{{format}}"
+                                   ng-model="startDate"
+                                   ng-model="maxDay"
+                                   is-open="popupStart.opened"
+                                   readonly="readonly"
+                                   ng-required="true"
+                                   close-text="关闭"
+                                   clear-text="清空"
+                                   current-text="今天"
+                                   alt-input-formats="altInputFormats"
+                                   datepicker-options="{maxDate:maxDay,showWeeks:false}"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group h34">
+                        <div class="col-md-4 textalign-c">
+                            <label>—</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text"
+                                   class="form-control"
+                                   value="" ng-click="openEnd()"
+                                   uib-datepicker-popup="{{format}}"
+                                   ng-model="endDate"
+                                   ng-model="today"
+                                   is-open="popupEnd.opened"
+                                   readonly="readonly"
+                                   ng-required="true"
+                                   close-text="关闭"
+                                   clear-text="清空"
+                                   current-text="今天"
+                                   alt-input-formats="altInputFormats"
+                                   datepicker-options="{minDate:startDate,maxDate:today,showWeeks:false}"/>
+                        </div>
+                    </div>
+                </div>
+                <!--搜索部分-->
+                <div class="col-md-4">
+                    <div class="form-group h34">
+                        <div class="col-md-4">
+                            <label class="word-spacing-25">类 型</label>
+                        </div>
+                        <div class="col-md-8">
+                            <select ng-model="type" class="select">
+                                <option ng-repeat="x in reType" value="{{x.value}}">{{x.name}}</option>
+                            </select>
+                            <!--<select class="form-control" ng-model="selectState" ng-options="x.key as x.value for x in type">-->
+                                <!--<option value>全部</option>-->
+                            <!--</select>-->
+                            <!--//案二-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group h34">
+                        <div class="col-md-4">
+                            <label class="word-spacing-25">状 态</label>
+                        </div>
+                        <div class="col-md-8">
+                            <select ng-model="status" class="select">
+                                <option ng-repeat="x in reStatus" value="{{x.value}}" >{{x.name}}</option>
+                            </select>
+                            <!--<select class="form-control" ng-model="selectType" ng-options="y.key as y.value for y in type">-->
+                                <!--<option value>全部</option>-->
+                            <!--</select>-->
+                            <!--//案二-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div class="col-md-4 pull-right text-right">
+                        <button type="button" ng-click="clean()" class="btn btn-danger">清空</button>
+                        <button type="button" ng-click="search()" class="btn btn-success">搜索</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--搜索结果部分-->
+    <div class="panel panel-default" style="margin-bottom: 0;">
+    <!--表头-->
+    <div class="panel-heading">
+        <strong>Article列表</strong>
+        <button ui-sref="homepage.newArticle" class="btn btn-xs btn-success pull-right">+新增</button>
+    </div>
+
+    <!--列表数据-->
+    <div class="panel-body table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>图片</th>
+                <th>标题</th>
+                <th>类型</th>
+                <th>发布时间</th>
+                <th>修改时间</th>
+                <th>发布者</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="x in records">
+                <td>{{$index + 1}}</td>
+                <td><img src="((x.img))" style="width:50px; height:50px"></td>
+                <td>{{x.title}}</td>
+                <td>{{x.type | type}}</td>
+                <!--过滤器-类型（匹配子串，通过filter）-->
+                <td>
+                    <div>{{x.createAt | date: 'yyyy-MM-dd'}}</div>
+                    <div>{{x.createAt | date: 'HH:mm:ss'}}</div>
+                    <!--过滤器-时间（内置）-->
+
+                </td>
+                <td>
+                    <div>{{x.updateAt | date: 'yyyy-MM-dd'}}</div>
+                    <div>{{x.updateAt | date: 'HH:mm:ss'}}</div>
+
+                </td>
+                <td>{{x.author}}</td>
+                <td>{{x.status | status}}</td>
+                  <!--过滤器-状态（匹配子串，通过filter）-->
+                <td>
+                    <a type="button" class="btn btn-sm" ng-click="lineModal()" style="cursor:pointer;">{{x.status | line}}</a>
+                    <!--过滤器-操作（匹配子串，通过filter）-->
+                    <a type="button" class="btn btn-sm" ui-sref="homepage.newArticle({id : x.id})">编辑</a>
+                    <a type="button" class="btn btn-sm" ng-click="delete()" style="cursor:pointer;">删除</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--分页部分-->
+    <ul style="float: right">
+        <li style="vertical-align: middle;display: inline-block;">
+            每页显示
+            <input ng-model="size;" style="width: 30px;text-align: center">
+            条
+        </li>
+        <li style="vertical-align: middle;display: inline-block;">
+            <ul uib-pagination
+                class="pagination pull-right"
+                items-per-page = "size"
+                ng-model = "page"
+                total-items = "totalItems"
+                max-size = "5"
+                ng-change = "search()"
+                boundary-links = "true"
+                boundary-link-numbers = "true"
+                rotate = "true"
+                force-ellipses = "true"
+                first-text = "首页"
+                last-text = "末页"
+                previous-text = "<"
+                next-text = ">"
+                style="display: inline-block"
+            >
+            </ul>
+        </li>
+        <li style="vertical-align: middle;display: inline-block;">
+            去第
+            <input ng-model = "newPage" style="width: 30px;text-align: center">
+            页
+        </li>
+        <li style="vertical-align: middle;display: inline-block;">
+            <a class="btn btn-default" ng-click="search()">确定</a>
+        </li>
+    </ul>
+
+    </div>
+
+</div>
+
+
+
+

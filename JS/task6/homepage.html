@@ -1,0 +1,98 @@
+
+<!--<!DOCTYPE html>-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>后台管理</title>-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0,-->
+    <!--maximum-scale=1.0, user-scalable=no"/>-->
+    <!--<link rel="stylesheet" href="CSS/reset.css">-->
+    <!--<link rel="stylesheet" href="CSS/homepage.css">-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<div class="main">-->
+    <!--<div class="homeHead">-->
+        <!--<div class="title">萝卜多后台管理系统</div>-->
+        <!--<div class="homeBtn">-->
+            <!--<span>管理员</span>-->
+            <!--<span >admin</span>-->
+            <!--<span >退出</span>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="list">列表</div>-->
+    <!--<div class="content">Wellcome!</div>-->
+
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8">-->
+<!--<title>后台管理</title>-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0,-->
+<!--maximum-scale=1.0, user-scalable=no"/>-->
+<!--<link rel="stylesheet" href="CSS/reset.css">-->
+<!--<link rel="stylesheet" href="CSS/homepage.css">-->
+<!--</head>-->
+<!--<body>-->
+<div ng-controller="homeCtrl">
+    <div class="homeMain">
+
+        <nav class="navbar">
+            <div class="navbar-header left">
+                <p><b>萝卜多后台管理系统</b></p>
+            </div>
+            <div class="right">
+                <ul class="navbar">
+                    <li class="navbar-right">
+                        <a>管理员</a>
+                        <span>|</span>
+                        <a>admin</a>
+                        <span>|</span>
+                        <a><span class="glyphicon glyphicon-off" ng-click="loginOut()"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="sidebar" >
+            <ul class="home-border">
+                <li class="panel-title"
+                    ng-repeat="x in homeTitle | orderBy: 'lv' ">
+                    <div class="title high" ng-click="list()" ng-model="titleId">
+                        <span class="icon-l glyphicon glyphicon-pencil"></span>
+                        {{x.name}}
+                        <span class="icon-r glyphicon " ng-class="x.select ? 'glyphicon-menu-down' : 'glyphicon-menu-left'"></span>
+                    </div>
+                    <ul class="ul-sonTitle" >
+                        <li id="msg" class="li-sonTitle high"
+                            ng-click="sonList()"
+                            ng-show="x.select"
+                            ui-sref="{{y.url}}"
+                            ng-class="{'highlight' : y.highlight }"
+                            ng-repeat="y in x.title | orderBy : ['name']">
+                            {{y.name}}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div ui-view >
+                <div class="row ">
+                    <div class="col-xs-12">
+                        <h1>Welcome!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--</body>-->
+<!--</html>-->

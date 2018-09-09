@@ -1,0 +1,17 @@
+
+<div  ng-controller="loginCtrl">
+<form class="bg" >
+    <p class="head" >后台登录</p>
+    <div class="user">
+        <img src="images-task6/2.png" height="17" width="16"/>
+        <input id="userIn" type="text" ng-model="userName" placeholder="用户名"/>
+    </div>
+    <div class="psw">
+        <img src="images-task6/1.png" height="18" width="15"/>
+        <input id="pswIn" type="password" ng-model="passWord" placeholder="密码" />
+    </div>
+    <p class="warn"   ng-bind='warn'></p>
+
+    <button  type="submit" class="login" id="logButton" ng-click="logBtn()">登录</button>
+</form>
+</div>

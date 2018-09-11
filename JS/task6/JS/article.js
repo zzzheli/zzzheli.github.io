@@ -136,6 +136,8 @@ app.controller('articleCtrl', function($scope, $http, $state, $stateParams,$filt
                 "是否执行下线操作？</h4>";
             $scope.tips2 = '下线成功';
         }
+
+        // //见封装
         bootbox.confirm({
             title: '操作提示',
             message: $scope.tips1,

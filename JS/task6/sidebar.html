@@ -1,0 +1,22 @@
+<!--<div class="sidebar" >-->
+    <!--<ul class="home-border">-->
+        <li class="panel-title"
+            ng-repeat="x in homeTitle | orderBy: 'lv' ">
+            <div class="title high" ng-click="list()" ng-model="titleId">
+                <span class="icon-l glyphicon glyphicon-pencil"></span>
+                {{x.name}}
+                <span class="icon-r glyphicon " ng-class="x.select ? 'glyphicon-menu-down' : 'glyphicon-menu-left'"></span>
+            </div>
+            <ul class="ul-sonTitle" >
+                <li id="msg" class="li-sonTitle high"
+                    ng-click="sonList()"
+                    ng-show="x.select"
+                    ui-sref="{{y.url}}"
+                    ng-class="{'highlight' : y.highlight }"
+                    ng-repeat="y in x.title | orderBy : ['name']">
+                    {{y.name}}
+                </li>
+            </ul>
+        </li>
+    <!--</ul>-->
+<!--</div>-->

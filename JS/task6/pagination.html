@@ -1,0 +1,35 @@
+<ul style="float: right">
+    <li style="vertical-align: middle;display: inline-block;">
+        每页显示
+        <input ng-model="size;" style="width: 30px;text-align: center">
+        条
+    </li>
+    <li style="vertical-align: middle;display: inline-block;">
+        <ul uib-pagination
+            class="pagination pull-right"
+            items-per-page = "size"
+            ng-model = "page"
+            total-items = "totalItems"
+            max-size = "5"
+            ng-change = "search()"
+            boundary-links = "true"
+            boundary-link-numbers = "true"
+            rotate = "true"
+            force-ellipses = "true"
+            first-text = "首页"
+            last-text = "末页"
+            previous-text = "<"
+            next-text = ">"
+            style="display: inline-block"
+        >
+        </ul>
+    </li>
+    <li style="vertical-align: middle;display: inline-block;">
+        去第
+        <input ng-model = "newPage" style="width: 30px;text-align: center">
+        页
+    </li>
+    <li style="vertical-align: middle;display: inline-block;">
+        <a class="btn btn-default" ng-click="search()">确定</a>
+    </li>
+</ul>

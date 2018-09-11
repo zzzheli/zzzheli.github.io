@@ -21,7 +21,39 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         .state("homepage.newArticle",{
             url:"/articleDetail?id",
             templateUrl:"newArticle.html"
-        })
+        });
+
+
+    // //模态框封装
+    // app.run(["$rootScope",function ($rootScope) {
+    //     $rootScope.modalConfirm=function (title,content,fn) {
+    //         bootbox.confirm({
+    //             title: titles,
+    //             message: content,
+    //             buttons: {
+    //                 cancel: {
+    //                     label: '取消',
+    //                     className: 'btn-success'
+    //                 },
+    //                 confirm: {
+    //                     label: '确认',
+    //                     className: 'btn-danger'
+    //                 }
+    //             },
+    //             callback:fn
+    //         })
+    //     };
+    //     $rootScope.modalAlert = function (titles, content, fn) {
+    //         bootbox.alert({
+    //             title: titles,
+    //             message: content,
+    //             callback: fn
+    //         })
+    //     }
+    //
+    //
+    // }])
+
 
 
 });

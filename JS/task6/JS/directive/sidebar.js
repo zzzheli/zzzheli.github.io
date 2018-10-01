@@ -78,3 +78,6 @@ app.directive('sidebar',function () {
     };
 
 });
+
+
+

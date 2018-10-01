@@ -11,7 +11,9 @@ app.config(function ($stateProvider,$urlRouterProvider) {
 
         .state("login",{
             url:"/login",
+            //(指向路径后的url)
             templateUrl:"login.html"
+            //(指向你的html文件)
         })
 
         .state("homepage.article",{
